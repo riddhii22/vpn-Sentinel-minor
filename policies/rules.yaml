@@ -1,0 +1,12 @@
+rules:
+  - id: IKE-001
+    title: IKEv1 Detected
+    severity: critical
+    score: 30
+    recommendation: Disable IKEv1 and migrate the tunnel to IKEv2.
+
+  - id: IKE-002
+    title: IKEv2 In Use
+    severity: info
+    score: 0
+    recommendation: IKEv2 detected. Cryptographic policy still requires assessment.
