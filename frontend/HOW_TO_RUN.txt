@@ -1,0 +1,14 @@
+VPN Sentinel frontend
+=====================
+1. Unzip so you get a folder named frontend (with package.json inside).
+2. Put that folder here:
+   C:\Users\riddh\code\vpn-sentinel\frontend
+3. Keep the Python API running:
+   python -m uvicorn app.main:app --host 127.0.0.1 --port 48291
+4. In a new terminal:
+   cd C:\Users\riddh\code\vpn-sentinel\frontend
+   npm install
+   npm run dev
+5. Open http://127.0.0.1:43123
+The UI calls POST /api/analyze which Vite forwards to port 48291.
+Demo buttons use files in frontend/public/samples/.

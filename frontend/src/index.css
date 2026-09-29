@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+
+  /* Exact product tokens */
+  --bg-primary: #121314;
+  --bg-secondary: #1A1C1E;
+  --accent: #E05A26;
+  --accent-hover: #FF7A45;
+  --text-primary: #F3F4F6;
+  --text-muted: #8C92AC;
+  --border: #2D3139;
+
+  /* Aliases used by layout */
+  --bg: var(--bg-primary);
+  --card: var(--bg-secondary);
+  --bg-elev: var(--bg-secondary);
+  --ink: var(--text-primary);
+  --muted: var(--text-muted);
+  --line: var(--border);
+
+  /* Severity on the same palette (no generic blue/green/purple) */
+  --critical: #FF7A45;
+  --high: #E05A26;
+  --medium: #F3F4F6;
+  --low: #8C92AC;
+  --status-ok: #7A9B74;
+  --status-critical: #E05A26;
+  --status-unknown: #8C92AC;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
